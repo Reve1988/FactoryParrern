@@ -1,6 +1,6 @@
 package org.headfirst.factorypattern.store;
 
-import org.headfirst.factorypattern.model.Pizza;
+import org.headfirst.factorypattern.model.pizza.Pizza;
 
 public abstract class PizzaStore {
 	public Pizza order(String type) {

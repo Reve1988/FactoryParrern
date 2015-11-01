@@ -1,9 +1,9 @@
 package org.headfirst.factorypattern.store;
 
-import org.headfirst.factorypattern.model.CheesePizza;
-import org.headfirst.factorypattern.model.ClamPizza;
-import org.headfirst.factorypattern.model.NYStyleVeggiePizza;
-import org.headfirst.factorypattern.model.Pizza;
+import org.headfirst.factorypattern.model.pizza.CheesePizza;
+import org.headfirst.factorypattern.model.pizza.ClamPizza;
+import org.headfirst.factorypattern.model.pizza.NYStyleVeggiePizza;
+import org.headfirst.factorypattern.model.pizza.Pizza;
 
 public class ChicagoPizzaStore extends PizzaStore {
 
