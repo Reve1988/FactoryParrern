@@ -1,8 +1,8 @@
 package org.headfirst.factorypattern.store;
 
 import org.headfirst.factorypattern.model.pizza.CheesePizza;
-import org.headfirst.factorypattern.model.pizza.ChicagoStyleVeggiePizza;
 import org.headfirst.factorypattern.model.pizza.ClamPizza;
+import org.headfirst.factorypattern.model.pizza.NYStyleVeggiePizza;
 import org.headfirst.factorypattern.model.pizza.Pizza;
 
 public class NYPizzaStore extends PizzaStore {
@@ -15,8 +15,8 @@ public class NYPizzaStore extends PizzaStore {
 			pizza = new CheesePizza();
 		} else if (type.equals("clam")) {
 			pizza = new ClamPizza();
-		} else if (type.equals("ChicagoVeggie")) {
-			pizza = new ChicagoStyleVeggiePizza();
+		} else if (type.equals("NYVeggie")) {
+			pizza = new NYStyleVeggiePizza();
 		}
 
 		return pizza;
