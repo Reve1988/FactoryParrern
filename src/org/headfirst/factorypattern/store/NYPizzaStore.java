@@ -1,22 +1,21 @@
 package org.headfirst.factorypattern.store;
 
-import org.headfirst.factorypattern.model.pizza.CheesePizza;
-import org.headfirst.factorypattern.model.pizza.ClamPizza;
-import org.headfirst.factorypattern.model.pizza.NYStyleVeggiePizza;
-import org.headfirst.factorypattern.model.pizza.Pizza;
+import org.headfirst.factorypattern.NYPizzaIngredientFactory;
+import org.headfirst.factorypattern.PizzaIngredientFactory;
+import org.headfirst.factorypattern.product.CheesePizza;
+import org.headfirst.factorypattern.product.Pizza;
 
 public class NYPizzaStore extends PizzaStore {
-
+	private Pizza pizza;
+	private PizzaIngredientFactory ingredientFactory; 
+	
 	@Override
 	public Pizza createPizza(String type) {
-		Pizza pizza = null;
+		ingredientFactory = new NYPizzaIngredientFactory();
 
 		if (type.equals("cheese")) {
-			pizza = new CheesePizza();
-		} else if (type.equals("clam")) {
-			pizza = new ClamPizza();
-		} else if (type.equals("NYVeggie")) {
-			pizza = new NYStyleVeggiePizza();
+			pizza = new CheesePizza(ingredientFactory);
+			pizza.setName("NYStyle Cheese Pizza");
 		}
 
 		return pizza;
