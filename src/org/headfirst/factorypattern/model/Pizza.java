@@ -1,4 +1,4 @@
-package org.headfirst.model;
+package org.headfirst.factorypattern.model;
 
 public interface Pizza {
 	public void prepare();

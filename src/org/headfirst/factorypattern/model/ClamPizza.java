@@ -1,6 +1,6 @@
-package org.headfirst.model;
+package org.headfirst.factorypattern.model;
 
-public class CheesePizza implements Pizza {
+public class ClamPizza implements Pizza {
 
 	@Override
 	public void prepare() {
@@ -25,9 +25,9 @@ public class CheesePizza implements Pizza {
 		// TODO Auto-generated method stub
 
 	}
-	
+
 	@Override
 	public String toString() {
-		return "CheesePizza";
+		return "ClamPizza";
 	}
 }
