@@ -25,5 +25,9 @@ public class CheesePizza implements Pizza {
 		// TODO Auto-generated method stub
 
 	}
-
+	
+	@Override
+	public String toString() {
+		return "CheesePizza";
+	}
 }

@@ -26,4 +26,8 @@ public class ClamPizza implements Pizza {
 
 	}
 
+	@Override
+	public String toString() {
+		return "ClamPizza";
+	}
 }
